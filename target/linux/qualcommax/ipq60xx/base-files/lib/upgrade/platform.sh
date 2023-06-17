@@ -11,7 +11,9 @@ platform_check_image() {
 platform_do_upgrade() {
 	case "$(board_name)" in
 	linksys,mr7350|\
-	netgear,wax214)
+	netgear,wax214|\
+	glinet,gl-axt1800|\
+	glinet,gl-ax1800)
 		nand_do_upgrade "$1"
 		;;
 	*)
